@@ -44,6 +44,7 @@
 - (BOOL) isToday;
 - (BOOL) isTomorrow;
 - (BOOL) isYesterday;
+- (BOOL) isDateWithDaysBeforeNow: (NSInteger) numdays;
 
 - (BOOL) isSameWeekAsDate: (NSDate *) aDate;
 - (BOOL) isThisWeek;

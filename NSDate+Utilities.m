@@ -170,6 +170,11 @@ static const unsigned componentFlags = (NSYearCalendarUnit| NSMonthCalendarUnit 
 	return [self isEqualToDateIgnoringTime:[NSDate dateYesterday]];
 }
 
+- (BOOL) isDateWithDaysBeforeNow: (NSInteger) numdays
+{
+    return [self isEqualToDateIgnoringTime:[NSDate dateWithDaysBeforeNow:numdays]];
+}
+
 // This hard codes the assumption that a week is 7 days
 - (BOOL) isSameWeekAsDate: (NSDate *) aDate
 {
