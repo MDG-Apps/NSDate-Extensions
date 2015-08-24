@@ -82,6 +82,7 @@
 - (NSDate *) dateBySubtractingHours: (NSInteger) dHours;
 - (NSDate *) dateByAddingMinutes: (NSInteger) dMinutes;
 - (NSDate *) dateBySubtractingMinutes: (NSInteger) dMinutes;
+- (NSDate *) dateWithoutTime;
 
 // Date extremes
 - (NSDate *) dateAtStartOfDay;

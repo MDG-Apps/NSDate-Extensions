@@ -431,6 +431,11 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 	return (NSInteger) (ti / D_DAY);
 }
 
+- (NSDate *) dateWithoutTime {
+    NSDateComponents* comps = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:self];
+    return [[NSCalendar currentCalendar] dateFromComponents:comps];
+}
+
 // Thanks, dmitrydims
 // I have not yet thoroughly tested this
 - (NSInteger)distanceInDaysToDate:(NSDate *)anotherDate
