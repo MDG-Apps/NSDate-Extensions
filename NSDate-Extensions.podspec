@@ -7,6 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary          = 'Extensions for NSDate function.'
   spec.source           = { :git => 'https://github.com/MDG-Apps/NSDate-Extensions.git', :tag => 'v0.1' }
   spec.source_files     = 'NSDate+Utilities.{h,m}'
-  spec.platform         = :ios, '6.0'
+  spec.ios.deployment_target = '6.0'
+  spec.osx.deployment_target = '10.10'
   spec.requires_arc     = true
 end
